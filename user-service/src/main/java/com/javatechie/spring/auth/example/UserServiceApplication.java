@@ -27,7 +27,10 @@ public class UserServiceApplication {
 				new User(101,"Basant","basant@gmail.com","8867101121")).
 				collect(Collectors.toList());
 	}
-
+	@GetMapping("/hello")
+	public String hello(){
+		return "hello";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(UserServiceApplication.class, args);
 	}
